@@ -1,216 +1,264 @@
 {   
-    "Moluscos":{
-        "name":"Moluscos",
-        "image":"./img/_calamar.png",
-        "description":"Almejas, Mejillones, Navajas, Ostras, Calamares, Sepias, Pulpos..."
+  "Categorias":[
+    {
+      "name":"Moluscos",
+      "image":"./img/_calamar.png",
+      "description":"Almejas, Mejillones, Navajas, Ostras, Calamares, Sepias, Pulpos..."
+  },
+  {
+      "name": "Crustaceos",
+      "image": "./img/_langosta.png",
+      "description": "Gambas, Langostinos, Cangrejos, Langostas, Bogavante, Centollo..."
     },
-    "Crustaceos": {
-        "name": "Crustaceos",
-        "image": "./img/_langosta.png",
-        "description": "Gambas, Langostinos, Cangrejos, Langostas, Bogavante, Centollo..."
-      },
-      "Pescados": {
-        "name": "Pescados",
-        "image": "./img/_pez.png",
-        "description": "Pez totoaba, Pez globo, Atún rojo, Rodaballo salvaje, Merluza, Lubina..."
-      },
-      "Leche": {
-        "name": "Leche",
-        "description": "Cualquier tipo de leche como desnatada, semidescanata o entera."
-      },
-      "Tomate": {
-        "name": "Tomate",
-        "description": "Cualquier tipo de tomate, ya sea natural, frito, a la plancha, rallado o evaporado."
-      },
-      "Queso": {
-        "name": "Queso",
-        "description": "Cualquier tipo de queso, tanto enteros como complementos en salsas."
-      },
-      "Limón": {
-        "name": "Limón",
-        "description": "La mayoría de nuestros platos contienen limón, ya sea cortado o exprimido. Consultenos."
-      },
-      "Menú Degustación": {
-        "name": "Menú Degustación",
-        "description": "Nuestro menú Degustación es el más completo con 15 pequeños platos de diferentes sabores."
-      },
-      "Menú Sorpen": {
-        "name": "Menú Sorpen",
-        "description": "Nuestro menú Sorpren tendrás a elegir entre 3 platos y los 4 restantes serán elegidos por el chef."
-      },
-      "Menú Libertad": {
-        "name": "Menú Libertad",
-        "description": "Nuestro menú Libertad te dará la oportunidad de elegir todos los platos a degustar hasta un máximo de 5 platos por persona."
-      },
-      "MAR ORIGIN": {
-        "name": "MAR ORIGIN",
-        "description": "Situado en el corazón de Madrid, nuestro primer restaurante, el original",
-        "image": "./img/origin.jpg"
-      },
-      "MAR LITORAL": {
-        "name": "MAR LITORAL",
-        "description": "Situado a pie de playa en Cádiz, donde nuestro producto salta a la mesa.",
-        "image": "./img/litoral.jpg"
-      },
-      "MAR CONTINENTAL": {
-        "name": "MAR CONTINENTAL",
-        "description": "Situado en el corazón de Segovia, un sitio encantador donde te trasladará al mar en un solo bocado.",
-        "image": "./img/continental.jpg"
-      },
-      "Sepia sucia": {
-        "name": "Sepia sucia",
-        "description": "Tierna sepia cocida en su propia tinta, en armonía con la dulzura de la cebolla caramelizada y el perfume del ajo dorado, creando una sinfonía de contrastes que deleitará tu paladar con cada bocado.",
-        "ingredients": [
-          "Sepia fresca",
-          "Tinta de sepia",
-          "Cebolla",
-          "Ajo",
-          "Tomate",
-          "Aceite de oliva",
-          "Sal",
-          "Pimienta",
-          "Perejil fresco"
-        ],
-        "image": "./img/plato12.png"
-      },
-      "Almejas": {
-        "name": "Almejas",
-        "description": "Almejas frescas bañadas en su jugo natural, realzadas con un toque de ajo dorado y perejil fresco, ofreciendo un festín de sabor marino en cada bocado",
-        "ingredients": [
-          "Almejas frescas",
-          "Ajo",
-          "Perejil fresco"
-        ],
-        "image": "./img/plato07.png"
-      },
-      "Ostras": {
-        "name": "Ostras",
-        "description": "Ostras recién abiertas, servidas con una delicada rodaja de limón, que resalta su sabor salino y brinda una experiencia refrescante y exquisita para el paladar.",
-        "ingredients": [
-          "Ostras frescas",
-          "Limón"
-        ],
-        "image": "./img/plato08.png"
-      },
-      "Navajas": {
-        "name": "Navajas",
-        "description": "Navajas frescas, delicadamente preparadas, servidas sobre una cama de cebolla caramelizada, que realza su sabor a mar mientras se complementa con la dulzura de la cebolla, creando una experiencia gastronómica sublime y sofisticada.",
-        "ingredients": [
-          "Navajas frescas",
-          "Cebolla",
-          "Azúcar",
-          "Aceite de oliva",
-          "Sal"
-        ],
-        "image": "./img/plato05.png"
-      },
-      "Gambas blancas de Huelva": {
-        "name": "Gambas blancas de Huelva",
-        "description": "Deléitate con nuestras Gambas Blancas de Huelva: langostinos frescos del Atlántico, cocidos para resaltar su dulzura natural. Cada bocado es un viaje a las costas de Huelva, con su sabor marino incomparable.",
-        "ingredients": [
-          "Gambas frescas",
-          "Sal",
-          "Limón"
-        ],
-        "image": "./img/plato13.png"
-      },
-      "Gambones a la plancha": {
-        "name": "Gambones a la plancha",
-        "description": "Jugosos gambones cocinados en la plancha y realzados con un toque de limón fresco.",
-        "ingredients": [
-          "Gambones frescos",
-          "Sal",
-          "Limón"
-        ],
-        "image": "./img/plato06.png"
-      },
-      "Langosta con bechamel, queso y verduras": {
-        "name": "Langosta con bechamel, queso y verduras",
-        "description": "Langosta con Bechamel y Queso, acompañada de verduras en tempura crujiente. Una combinación de sabores y texturas que te sorprenderá.",
-        "ingredients": [
-          "Langosta fresca",
-          "Bechamel (contiene leche)",
-          "Queso",
-          "Verduras varias",
-          "Harina",
-          "Huevo",
-          "Sal",
-          "Pimienta"
-        ],
-        "image": "./img/plato10.png"
-      },
-      "Pastel de centollo": {
-        "name": "Pastel de centollo",
-        "description": "Una mezcla delicada de carne fresca de centollo en una masa finamente elaborada. Un deleite marino en cada bocado.",
-        "ingredients": [
-          "Carne de centollo fresca",
-          "Cebolla",
-          "Tomate",
-          "Pimiento rojo",
-          "Pimiento verde",
-          "Huevos",
-          "Nata líquida",
-          "Sal",
-          "Pimienta",
-          "Perejil"
-        ],
-        "image": "./img/plato11.png"
-      },
-      "Salmón con salsa de espinacas y queso parmesano": {
-        "name": "Salmón con salsa de espinacas y queso parmesano",
-        "description": "Una combinación deliciosa de frescura marina y cremosidad gourmet en cada bocado.",
-        "ingredients": [
-          "Filetes de salmón fresco",
-          "Espinacas frescas",
-          "Queso parmesano rallado",
-          "Nata líquida",
-          "Ajo",
-          "Mantequilla",
-          "Sal",
-          "Pimienta"
-        ],
-        "image": "./img/plato09.png"
-      },
-      "Mero con Variado de Patatas y Salsa Verde de Ajo y Perejil": {
-        "name": "Mero con Variado de Patatas y Salsa Verde de Ajo y Perejil",
-        "description": "Una combinación de sabores del mar y la tierra en cada bocado.",
-        "ingredients": [
-          "Filetes de mero frescos",
-          "Patatas (varias variedades, como rojas, blancas y dulces)",
-          "Ajo",
-          "Perejil fresco",
-          "Sal",
-          "Pimienta"
-        ],
-        "image": "./img/plato04.png"
-      },
-      "Merluza con Salsa de Nata, Tomate y Espinacas": {
-        "name": "Merluza con Salsa de Nata, Tomate y Espinacas",
-        "description": "Una combinación cremosa y deliciosa que realza la suavidad de la merluza con el frescor de las espinacas y el toque de tomate.",
-        "ingredients": [
-          "Filetes de merluza frescos",
-          "Nata líquida (crema de leche)",
-          "Tomates",
-          "Espinacas frescas",
-          "Ajo",
-          "Sal",
-          "Pimienta"
-        ],
-        "image": "./img/plato01.png"
-      },
-      "Pez Totova con Tempura de Zanahoria y Remolacha con salsa de ajo": {
-        "name": "Pez Totova con Tempura de Zanahoria y Remolacha con salsa de ajo",
-        "description": "Descubre nuestro plato de Pez Totova con Tempura de Zanahoria y Remolacha, servido con una salsa de ajo picante y aromática. Una combinación irresistible de sabores y texturas que te cautivará.",
-        "ingredients": [
-          "Filetes de pez totova frescos",
-          "Zanahorias",
-          "Remolachas",
-          "Harina de trigo",
-          "Huevo",
-          "Ajo",
-          "Sal",
-          "Perejil"
-        ],
-        "image": "./img/plato02.png"
-      }
+    {
+      "name": "Pescados",
+      "image": "./img/_pez.png",
+      "description": "Pez totoaba, Pez globo, Atún rojo, Rodaballo salvaje, Merluza, Lubina..."
+    }
+  ],
+  "Alergenos": [
+    {
+      "name": "Leche",
+      "description": "Cualquier tipo de leche como desnatada, semidescanata o entera."
+    },
+    {
+      "name": "Tomate",
+      "description": "Cualquier tipo de tomate, ya sea natural, frito, a la plancha, rallado o evaporado."
+    },
+    {
+      "name": "Queso",
+      "description": "Cualquier tipo de queso, tanto enteros como complementos en salsas."
+    },
+    {
+      "name": "Limón",
+      "description": "La mayoría de nuestros platos contienen limón, ya sea cortado o exprimido. Consultenos."
+    }
+  ],
+  "Menus": [
+    {
+      "name": "Menú Degustación",
+      "description": "Nuestro menú Degustación es el más completo con 15 pequeños platos de diferentes sabores."
+    },
+    {
+      "name": "Menú Sorpren",
+      "description": "Nuestro menú Sorpren tendrás a elegir entre 3 platos y los 4 restantes serán elegidos por el chef."
+    },
+    {
+      "name": "Menú Libertad",
+      "description": "Nuestro menú Libertad te dará la oportunidad de elegir todos los platos a degustar hasta un máximo de 5 platos por persona."
+    }
+  ],
+  "Restaurantes":[
+  
+    {
+      "name": "MAR ORIGIN",
+      "description": "Situado en el corazón de Madrid, nuestro primer restaurante, el original",
+      "image": "./img/origin.jpg"
+    },
+   {
+      "name": "MAR LITORAL",
+      "description": "Situado a pie de playa en Cádiz, donde nuestro producto salta a la mesa.",
+      "image": "./img/litoral.jpg"
+    },
+    {
+      "name": "MAR CONTINENTAL",
+      "description": "Situado en el corazón de Segovia, un sitio encantador donde te trasladará al mar en un solo bocado.",
+      "image": "./img/continental.jpg"
+    }
+  ],
+  "Platos":[
+   {
+      "name": "Sepia sucia",
+      "description": "Tierna sepia cocida en su propia tinta, en armonía con la dulzura de la cebolla caramelizada y el perfume del ajo dorado, creando una sinfonía de contrastes que deleitará tu paladar con cada bocado.",
+      "ingredients": [
+        "Sepia fresca",
+        "Tinta de sepia",
+        "Cebolla",
+        "Ajo",
+        "Tomate",
+        "Aceite de oliva",
+        "Sal",
+        "Pimienta",
+        "Perejil fresco"
+      ],
+      "image": "./img/plato12.png",
+      "category": "Moluscos",
+      "allergen":[],
+      "menu": ""
+    },
+    {
+      "name": "Almejas",
+      "description": "Almejas frescas bañadas en su jugo natural, realzadas con un toque de ajo dorado y perejil fresco, ofreciendo un festín de sabor marino en cada bocado",
+      "ingredients": [
+        "Almejas frescas",
+        "Ajo",
+        "Perejil fresco"
+      ],
+      "image": "./img/plato07.png",
+      "category": "Moluscos",
+      "allergen":[],
+      "menu": "Menú Libertad"
+    },
+    {
+      "name": "Ostras",
+      "description": "Ostras recién abiertas, servidas con una delicada rodaja de limón, que resalta su sabor salino y brinda una experiencia refrescante y exquisita para el paladar.",
+      "ingredients": [
+        "Ostras frescas",
+        "Limón"
+      ],
+      "image": "./img/plato08.png",
+      "category": "Moluscos",
+      "allergen": ["Limón"],
+      "menu": "Menú Degustación"
+    },
+    {
+      "name": "Navajas",
+      "description": "Navajas frescas, delicadamente preparadas, servidas sobre una cama de cebolla caramelizada, que realza su sabor a mar mientras se complementa con la dulzura de la cebolla, creando una experiencia gastronómica sublime y sofisticada.",
+      "ingredients": [
+        "Navajas frescas",
+        "Cebolla",
+        "Azúcar",
+        "Aceite de oliva",
+        "Sal"
+      ],
+      "image": "./img/plato05.png",
+      "category": "Moluscos",
+      "allergen":[],
+      "menu": "Menú Sorpren"
+    },
+    {
+      "name": "Gambas blancas de Huelva",
+      "description": "Deléitate con nuestras Gambas Blancas de Huelva: langostinos frescos del Atlántico, cocidos para resaltar su dulzura natural. Cada bocado es un viaje a las costas de Huelva, con su sabor marino incomparable.",
+      "ingredients": [
+        "Gambas frescas",
+        "Sal",
+        "Limón"
+      ],
+      "image": "./img/plato13.png",
+      "category": "Crustaceos",
+      "allergen": ["Limón"],
+      "menu": "Menú Sorpren"
+    },
+    {
+      "name": "Gambones a la plancha",
+      "description": "Jugosos gambones cocinados en la plancha y realzados con un toque de limón fresco.",
+      "ingredients": [
+        "Gambones frescos",
+        "Sal",
+        "Limón"
+      ],
+      "image": "./img/plato06.png",
+      "category": "Crustaceos",
+      "allergen":[],
+      "menu": ""
+    },
+    {
+      "name": "Langosta con bechamel, queso y verduras",
+      "description": "Langosta con Bechamel y Queso, acompañada de verduras en tempura crujiente. Una combinación de sabores y texturas que te sorprenderá.",
+      "ingredients": [
+        "Langosta fresca",
+        "Bechamel (contiene leche)",
+        "Queso",
+        "Verduras varias",
+        "Harina",
+        "Huevo",
+        "Sal",
+        "Pimienta"
+      ],
+      "image": "./img/plato10.png",
+      "category": "Crustaceos",
+      "allergen": ["Leche", "Queso"],
+      "menu": "Menú Libertad"
+    },
+    {
+      "name": "Pastel de centollo",
+      "description": "Una mezcla delicada de carne fresca de centollo en una masa finamente elaborada. Un deleite marino en cada bocado.",
+      "ingredients": [
+        "Carne de centollo fresca",
+        "Cebolla",
+        "Tomate",
+        "Pimiento rojo",
+        "Pimiento verde",
+        "Huevos",
+        "Nata líquida",
+        "Sal",
+        "Pimienta",
+        "Perejil"
+      ],
+      "image": "./img/plato11.png",
+      "category": "Crustaceos",
+      "allergen": ["Leche", "Tomate"],
+      "menu": "Menú Degustación"
+    },
+    {
+      "name": "Salmón con salsa de espinacas y queso parmesano",
+      "description": "Una combinación deliciosa de frescura marina y cremosidad gourmet en cada bocado.",
+      "ingredients": [
+        "Filetes de salmón fresco",
+        "Espinacas frescas",
+        "Queso parmesano rallado",
+        "Nata líquida",
+        "Ajo",
+        "Mantequilla",
+        "Sal",
+        "Pimienta"
+      ],
+      "image": "./img/plato09.png",
+      "category": "Pescados",
+      "allergen": ["Leche", "Queso"],
+      "menu": "Menú Sorpren"
+    },
+    {
+      "name": "Mero con Variado de Patatas y Salsa Verde de Ajo y Perejil",
+      "description": "Una combinación de sabores del mar y la tierra en cada bocado.",
+      "ingredients": [
+        "Filetes de mero frescos",
+        "Patatas (varias variedades, como rojas, blancas y dulces)",
+        "Ajo",
+        "Perejil fresco",
+        "Sal",
+        "Pimienta"
+      ],
+      "image": "./img/plato04.png",
+      "category": "Pescados",
+      "allergen":[],
+      "menu": ""
+    },
+    {
+      "name": "Merluza con Salsa de Nata, Tomate y Espinacas",
+      "description": "Una combinación cremosa y deliciosa que realza la suavidad de la merluza con el frescor de las espinacas y el toque de tomate.",
+      "ingredients": [
+        "Filetes de merluza frescos",
+        "Nata líquida (crema de leche)",
+        "Tomates",
+        "Espinacas frescas",
+        "Ajo",
+        "Sal",
+        "Pimienta"
+      ],
+      "image": "./img/plato01.png",
+      "category": "Pescados",
+      "allergen": ["Leche", "Tomate"],
+      "menu": "Menú Libertad"
+    },
+    {
+      "name": "Pez Totova con Tempura de Zanahoria y Remolacha con salsa de ajo",
+      "description": "Descubre nuestro plato de Pez Totova con Tempura de Zanahoria y Remolacha, servido con una salsa de ajo picante y aromática. Una combinación irresistible de sabores y texturas que te cautivará.",
+      "ingredients": [
+        "Filetes de pez totova frescos",
+        "Zanahorias",
+        "Remolachas",
+        "Harina de trigo",
+        "Huevo",
+        "Ajo",
+        "Sal",
+        "Perejil"
+      ],
+      "image": "./img/plato02.png",
+      "category": "Pescados",
+      "allergen":[],
+      "menu": "Menú Degustación"
+    }
+  ]
+     
 }

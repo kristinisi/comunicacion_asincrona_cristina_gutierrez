@@ -365,6 +365,10 @@ class ManagerView {
       "beforeend",
       '<li><a id="lChangeDish" class="dropdown-item" href="#change-dish">Cambiar posición platos</a></li>'
     );
+    suboptions.insertAdjacentHTML(
+      "beforeend",
+      '<li><a id="lBackup" class="dropdown-item" href="#backup">Backup</a></li>'
+    );
 
     menuOption.append(suboptions);
     this.menu.append(menuOption);
@@ -1539,7 +1543,8 @@ class ManagerView {
     hNewRestaurant,
     hAssignDishForm,
     hDesassignDishForm,
-    hChangeDishForm
+    hChangeDishForm,
+    hbackup
   ) {
     const newCategoryLink = document.getElementById("lnewCategory");
     newCategoryLink.addEventListener("click", (event) => {
@@ -1625,6 +1630,17 @@ class ManagerView {
         [],
         "#change-dish",
         { action: "changeDish" },
+        "#",
+        event
+      );
+    });
+    const backup = document.getElementById("lBackup");
+    backup.addEventListener("click", (event) => {
+      this[EXCECUTE_HANDLER](
+        hbackup,
+        [],
+        "#backup",
+        { action: "backup" },
         "#",
         event
       );

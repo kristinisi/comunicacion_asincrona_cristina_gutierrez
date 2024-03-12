@@ -1,0 +1,507 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Wire+One&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  display: grid;
+  justify-items: center;
+}
+
+.portada {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: [uno] 92% [dos] 8% [tres];
+}
+
+#userArea {
+  background-color: #1b1557;
+  position: fixed;
+  width: 10%;
+  z-index: 1000;
+  color: white;
+}
+
+.barra {
+  background-color: #1b1557;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.barra__style {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.barra__style li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.barra ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.cara {
+  background-image: url("../img/mar_fondo2.jpg");
+  background-size: cover;
+}
+
+.cara__logotipo {
+  object-fit: cover;
+  margin-left: 33vw;
+  margin-top: 15vh;
+}
+
+.separador {
+  background-color: #1b1557;
+}
+
+.gastro {
+  padding-top: 35px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: [uno] 150px [dos] 400px [tres] 400px [cuatro];
+  justify-content: center;
+  justify-items: center;
+}
+
+.gastro header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: center;
+}
+
+hr {
+  color: black;
+}
+
+.reserva {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  text-align: center;
+  margin: 20px;
+  margin-bottom: 40px;
+}
+
+.reserva__online button {
+  background-color: #1b1557;
+  color: white;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.reserva__online button a {
+  text-decoration: none;
+  color: white;
+}
+
+.nosotros {
+  padding-top: 35px;
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: [uno] 150px [dos] 500px [tres]200px[cuatro]; /*[tres]500[cuatro]200px[cinco]*/
+  justify-items: center;
+}
+
+.nosotros header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+}
+
+.nosotros__imagen {
+  background-image: url("../img/nosotros.jpg");
+  width: 290px;
+  height: 450px;
+  background-size: cover;
+}
+
+.nosotros_descripcion {
+  text-align: justify;
+  padding-right: 100px;
+}
+
+.nosotros__360 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+}
+
+.nosotros__situacion {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+}
+
+.foo {
+  width: 100%;
+  text-align: center;
+  background-color: #1b1557;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.foo a {
+  text-decoration: none;
+  color: white;
+}
+
+/* --------------------------- */
+
+#categories img {
+  height: 300px;
+}
+
+#categories {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#categories div {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.categories__enlace {
+  text-decoration: none;
+  color: black;
+}
+
+#dishes-list {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#category-list > h1 {
+  margin-top: 50px;
+}
+
+.plato {
+  margin-top: 30px;
+}
+
+.plato img {
+  width: 280px;
+  height: 280px;
+}
+
+.cambiar--fondo {
+  background-image: url("../img/marmol2.jpg");
+  background-size: cover;
+}
+
+.miniSeparador {
+  margin: auto;
+  width: 60%;
+  height: 2px;
+  background-color: #1b1557;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+  clear: both;
+  font-weight: 400;
+  color: var(--bs-dropdown-link-color);
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  border-radius: var(--bs-dropdown-item-border-radius, 0);
+}
+
+#navCats:active,
+#navCats:hover,
+#navCats:focus,
+#navAller:active,
+#navAller:hover,
+#navAller:focus,
+#navMenu:active,
+#navMenu:hover,
+#navMenu:focus,
+#navRest:active,
+#navRest:hover,
+#navRest:focus,
+#navServices:active,
+#navServices:hover,
+#navServices:focus {
+  color: white;
+}
+
+.dropdown-item {
+  background-color: #1b1557;
+}
+
+.dropdown-item:hover {
+  color: #1b1557;
+}
+
+.dropdown-menu {
+  --bs-dropdown-padding-y: 0;
+}
+
+.dropdown-menu li {
+  padding: 0;
+}
+
+main {
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+#random-dishes {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: [uno] 50px [dos] 50px [tres] 380px [cuatro];
+  justify-content: center;
+  background-image: url("../img/marmol2.jpg");
+}
+
+.miniSeparador {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.tit {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  justify-content: center;
+}
+
+.plato2 {
+  display: flex;
+  justify-content: center;
+}
+
+#single-dish {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+#restaurant {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.breadcrumb {
+  margin-left: 8%;
+}
+
+#btn {
+  margin-bottom: 50px;
+  color: white;
+  background-color: #1b1557;
+  height: 30px;
+  border-radius: 5px;
+}
+
+#aux {
+  background-image: url("../img/marmol2.jpg");
+  background-size: cover;
+}
+
+#new-category,
+#new-dish,
+#remove-dish,
+#new-restaurant,
+#desassign-dish,
+#change-dish {
+  text-align: justify;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #1b1557;
+  --bs-btn-border-color: #1b1557;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-border-color: none;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: none;
+  --bs-btn-active-border-color: none;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: none;
+  --bs-btn-disabled-border-color: none;
+}
+
+#remove-category {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-content: space-around; /* Ajusta el espacio entre los elementos */
+  align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
+}
+
+.categories-eliminar {
+  flex-basis: calc(
+    33.33% - 20px
+  ); /* Establece el ancho base de cada elemento */
+  margin: 10px; /* Espacio entre los elementos */
+}
+
+.row {
+  justify-content: space-around;
+}
+
+.card-text {
+  text-align: left;
+}
+
+.text-rest {
+  text-align: center;
+}
+
+#chdish-list div {
+  padding: 0px;
+}
+
+button.deny {
+  color: rgb(52, 58, 64);
+}
+button.deny:hover {
+  background-color: rgb(52, 58, 64);
+  border-color: rgb(248, 249, 250);
+  color: rgb(248, 249, 250);
+}
+
+#btnAcceptCookie {
+  color: rgb(255, 255, 255);
+  background-color: rgb(26, 77, 127);
+  border-color: rgb(248, 249, 250);
+}
+
+#btnAcceptCookie:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(135, 75, 11);
+  border-color: rgb(248, 249, 250);
+}
+
+/* ------------------------------------------------------- Enlace de identificacion */
+
+#login {
+  cursor: pointer;
+  display: block;
+  font-size: 1.1rem;
+  padding: 6px;
+  height: 150px;
+  color: #89b8c9;
+  text-decoration: none;
+}
+
+.user_card {
+  width: 600px;
+  height: 300px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background: #89b8c9;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  /* box-shadow: 0 4px 8px 0 rgba(72, 125, 119, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  border-radius: 5px;
+}
+/* .brand_logo_container {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  top: -75px;
+  border-radius: 50%;
+  background: #60a3bc;
+  padding: 10px;
+  text-align: center;
+} */
+/* .brand_logo {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid white;
+} */
+.form_container {
+  margin-top: 20px;
+}
+.login_btn {
+  width: 100%;
+  background: #ffffff !important;
+  color: black !important;
+}
+
+.login_btn:hover {
+  width: 100%;
+  background: #1b1557 !important;
+  color: white !important;
+}
+.login_btn:focus {
+  box-shadow: none !important;
+  outline: 0px !important;
+}
+.login_container {
+  padding: 0 2rem;
+}
+.input-group-text {
+  background: #c0392b !important;
+  color: white !important;
+  border: 0 !important;
+  border-radius: 0.25rem 0 0 0.25rem !important;
+}
+.input_user,
+.input_pass:focus {
+  box-shadow: none !important;
+  outline: 0px !important;
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #c0392b !important;
+}
+
+#userArea a {
+  text-decoration: none;
+}
+
+#user_min {
+  font-size: 14px;
+}
+#user_min a {
+  font-size: 14px;
+  color: white;
+}
+
+#img_user {
+  width: 30px;
+}
+
+/* -------------------- */

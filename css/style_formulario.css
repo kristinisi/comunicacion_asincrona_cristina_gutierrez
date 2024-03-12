@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Wire+One&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  display: grid;
+  justify-items: center;
+}
+
+.portada {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: [uno] 92% [dos] 8% [tres];
+}
+
+.barra {
+  background-color: #1b1557;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.barra__style {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.barra__style li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.barra ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.contenedor {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  background-image: url("../img/mar0.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.formulario {
+  background-color: black;
+  opacity: 70%;
+  border-radius: 30px;
+  color: white;
+  width: 60vw;
+  height: 75vh;
+}
+
+.zona1 {
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  grid-template-rows: [uno] 70% [dos];
+  justify-content: center;
+  column-gap: 50px;
+  padding-top: 20px;
+}
+
+.persona__nombre {
+  display: grid;
+}
+
+.persona__apellido1 {
+  display: grid;
+}
+.persona__apellido2 {
+  display: grid;
+}
+
+.persona__hora {
+  display: grid;
+}
+
+.persona__personas {
+  display: grid;
+}
+
+.persona__mensaje {
+  display: grid;
+}
+
+/* NOTA!! TENGO QUE SEPARAR LAS CLASES SINO NO SE ME QUEDA COMO QUIERO
+          NO PUEDO PONER UNA CLASE CONJUNTA CON SU DISPLAY:GRID */
+
+.tarjeta__numero {
+  display: grid;
+}
+
+.tarjeta__caducidad {
+  display: grid;
+}
+
+.tarjeta__seguridad {
+  display: grid;
+}
+
+.tarjeta__titular {
+  display: grid;
+}
+
+.tarjeta__importe {
+  display: grid;
+}
+
+.tarjeta__importe img {
+  padding-left: 15vw;
+}
+
+.formulario__enviar {
+  text-align: center;
+}
+
+.zona2 {
+  display: grid;
+  grid-template-rows: [uno] 30% [dos];
+  justify-content: center;
+}
+
+.zona2 div {
+  text-align: center;
+}
+
+.separador {
+  background-color: #1b1557;
+}

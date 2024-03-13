@@ -3,11 +3,13 @@ import { getCookie } from "./util.js";
 
 const MODEL = Symbol("RestaurantsManager");
 const VIEW = Symbol("ManagerView");
+
+const AUTH = Symbol("AUTH");
+const USER = Symbol("USER");
+
 const LOAD_RESTAURANTS_MANAGER_OBJECTS = Symbol(
   "Load Restaurants Manager Objects"
 );
-const AUTH = Symbol("AUTH");
-const USER = Symbol("USER");
 
 class ManagerController {
   constructor(model, view, auth) {
@@ -25,22 +27,6 @@ class ManagerController {
   }
 
   onLoad = () => {
-    //lo debemos hacer una unica vez al comienzo de la aplicación
-    if (getCookie("accetedCookieMessage") !== "true") {
-      this[VIEW].showCookiesMessage();
-    }
-
-    const userCookie = getCookie("activeUser");
-    if (userCookie) {
-      const user = this[AUTH].getUser(userCookie);
-      if (user) {
-        this[USER] = user;
-        this.onOpenSession();
-      }
-    } else {
-      this.onCloseSession();
-    }
-
     // this[LOAD_RESTAURANTS_MANAGER_OBJECTS]();
     fetch("../data/objects.json")
       .then((response) => response.json())
@@ -110,6 +96,22 @@ class ManagerController {
         this.onAddRestaurant();
         this.onInit();
         this[VIEW].bindInit(this.handleInit);
+
+        //lo debemos hacer una unica vez al comienzo de la aplicación
+        if (getCookie("accetedCookieMessage") !== "true") {
+          this[VIEW].showCookiesMessage();
+        }
+
+        const userCookie = getCookie("activeUser");
+        if (userCookie) {
+          const user = this[AUTH].getUser(userCookie);
+          if (user) {
+            this[USER] = user;
+            this.onOpenSession();
+          }
+        } else {
+          this.onCloseSession();
+        }
       });
   };
 
